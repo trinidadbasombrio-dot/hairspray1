@@ -1,0 +1,575 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #BE9FD5; 
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 15px 30px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.navbar nav a.active {
+    background-color: #ffffff;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #d63384; 
+    width: 90%;
+    max-width: 900px;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+
+.search-icon {
+    margin-right: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+.search-bar input::placeholder {
+    color: #fce4ec;
+}
+
+.product-category {
+    text-align: center;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1100px;
+}
+
+.product-category h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    background-color: #008080; 
+    border-radius: 25px;
+    padding: 15px 10px;
+    gap: 10px;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.card {
+    min-width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        min-width: 120px;
+        height: 120px;
+    }
+}
+.footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333;
+}
+.logo-img {
+    height: 45px; 
+    width: auto;
+    display: block;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Fondo ajustado */
+    background-color: #a084bd;
+    background-image: url(fondo\ hairspray.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    background-position: center top; 
+    background-attachment: fixed;
+}
+}
+
+/* --- Sección Categorías (Grilla 2x2 Achicada) --- */
+
+.seccion-categorias {
+    flex: 1;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+   max-width: 850px !important;
+    margin: 0 auto !important;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.grilla-categorias {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 15px !important;
+  width: 100% !important;
+}
+
+.tarjeta-categoria {
+    height: 165px !important;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.imagen-icono {
+    width: 90px !important;
+    height: 60px !important;
+    object-fit: contain;
+    margin-bottom: 2px;
+}
+}
+
+.contenido-tarjeta h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.solapa-inferior {
+    padding: 6px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.tarjeta-categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.28);
+}
+
+.contenido-tarjeta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.imagen-icono {
+    width: 120px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.contenido-tarjeta h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.solapa-inferior {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.tarjeta-categoria.spray { background-color: #a2ded0; }
+.tarjeta-categoria.spray .contenido-tarjeta h2 { color: #1b3d36; }
+.tarjeta-categoria.spray .solapa-inferior { background-color: #bdebd2; color: #1b3d36; }
+
+.tarjeta-categoria.ofertas { background-color: #f78b80; }
+.tarjeta-categoria.ofertas .contenido-tarjeta h2 { color: #ffffff; }
+.tarjeta-categoria.ofertas .solapa-inferior { background-color: #fca79d; color: #ffffff; }
+
+.tarjeta-categoria.maquillajes { background-color: #d84b85; }
+.tarjeta-categoria.maquillajes .contenido-tarjeta h2 { color: #ffffff; }
+.tarjeta-categoria.maquillajes .solapa-inferior { background-color: #e36b9c; color: #ffffff; }
+
+.tarjeta-categoria.calzados { background-color: #92d5f0; }
+.tarjeta-categoria.calzados .contenido-tarjeta h2 { color: #113444; }
+.tarjeta-categoria.calzados .solapa-inferior { background-color: #b7e3f5; color: #113444; }
+
+.tarjeta-categoria.maquillajes {
+    background-color: #d84b85;
+}
+.tarjeta-categoria.maquillajes .contenido-tarjeta h2 {
+    color: #ffffff;
+}
+.tarjeta-categoria.maquillajes .solapa-inferior {
+    background-color: #e36b9c;
+    color: #ffffff;
+}
+
+.tarjeta-categoria.calzados {
+    background-color: #92d5f0;
+}
+.tarjeta-categoria.calzados .contenido-tarjeta h2 {
+    color: #113444;
+}
+.tarjeta-categoria.calzados .solapa-inferior {
+    background-color: #b7e3f5;
+    color: #113444;
+}
+
+@media (max-width: 600px) {
+    .grilla-categorias {
+        grid-template-columns: 1fr;
+    }
+}
+
+.barra-categoria:hover {
+    background-color: #428272;
+    transform: scale(1.02);
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.seccion-ofertas {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-producto {
+    background-color: #f7f3e8; 
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-producto {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.imagen-producto img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.info-producto {
+    background-color: #f4a259; 
+    padding: 12px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.info-producto h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.info-producto .descuento {
+    margin: 0 0 5px 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.info-producto .precio {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.info-producto .precio-anterior {
+    text-decoration: line-through;
+    opacity: 0.8;
+    font-weight: normal;
+}
+
+.boton-tarjeta {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.boton-tarjeta:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 900px) {
+    .grilla-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grilla-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.seccion-perfil {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.tarjeta-usuario {
+    background-color: #d84b85; 
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-contenedor {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #888888;
+    overflow: hidden;
+    background-color: #ffffff;
+    flex-shrink: 0;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.datos-usuario h2 {
+    margin: 0 0 8px 0;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.email-usuario {
+    margin: 0;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.boton-editar-perfil {
+    background-color: #cccccc;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.boton-editar-perfil:hover {
+    background-color: #bbbbbb;
+}
+
+.menu-perfil {
+    background-color: #519b88;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.opcion-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 25px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+    transition: background-color 0.2s ease;
+}
+
+.opcion-perfil:last-child {
+    border-bottom: none;
+}
+
+.opcion-perfil:hover {
+    background-color: #428272;
+    color: #ffffff;
+}
+
+.flechas {
+    color: #f4a259; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: -2px;
+}
+
+.seccion-configuraciones {
+    flex: 1;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.menu-configuraciones {
+    background-color: #d84b85; 
+    border-radius: 25px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.opcion-configuracion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+    transition: background-color 0.2s ease;
+}
+
+.opcion-configuracion:last-child {
+    border-bottom: none;
+}
+
+.opcion-configuracion:hover {
+    background-color: #c43c74;
+}
+
+.flechas-negras {
+    color: #000000; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: -2px;
+}
+.tarjeta-categoria {
+    height: 330px; 
+}
